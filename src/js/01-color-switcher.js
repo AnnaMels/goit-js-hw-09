@@ -6,9 +6,9 @@ const refs = {
 let timerId = null;
 
 refs.startBtn.addEventListener('click', () => {
+    refs.startBtn.setAttribute('disabled', 'disabled');
     timerId = setInterval(() => {
         onStartButtonClick();
-        refs.startBtn.setAttribute('disabled', 'disabled');
     }, 1000)
 });
 

@@ -18,7 +18,7 @@ function onFornSubmit(e) {
 
   for (let i = 1; i <= amountValue; i += 1) {
     createPromise(i, firstDelayValue)
-     .then(({ position, delay }) => {
+      .then(({ position, delay }) => {
     Notiflix.Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
   })
   .catch(({ position, delay }) => {
